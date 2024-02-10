@@ -10,4 +10,6 @@ NKRO_ENABLE = yes           # Enable N-Key Rollover
 BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
 RGBLIGHT_ENABLE = no        # Enable keyboard RGB underglow
 AUDIO_ENABLE = no           # Audio output
-LTO_ENABLE = yes
+LTO_ENABLE = yes			# Link time optimization to reduce fw size
+
+DEBOUNCE_TYPE = asym_eager_defer_pk		# Eager keydown, deferred keyup
