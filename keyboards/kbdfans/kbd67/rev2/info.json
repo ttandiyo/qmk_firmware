@@ -44,6 +44,24 @@
     },
     "processor": "atmega32u4",
     "bootloader": "atmel-dfu",
+    "build": {
+        "debounce_type": "asym_eager_defer_pk",
+        "lto": true
+    },
+    "bootmagic": {
+        "enabled": true
+    },
+    "debounce": 5,
+    "features": {
+        "backlight": false,
+        "rgblight": false,
+        "audio": false,
+        "mousekey": false,
+        "console": false,
+        "command": false,
+        "nkro": true,
+        "extrakey": true
+    },
     "layout_aliases": {
         "LAYOUT_65_ansi_blocker_splitbs": "LAYOUT_65_ansi_blocker_split_bs",
         "LAYOUT_65_ansi_split_bs_2_right_mods": "LAYOUT_65_ansi_rwkl_split_bs"
